@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Practise Javascript</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript"
+        src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <script src="./index.js"></script>
+
 </head>
 
 <body>
@@ -60,6 +65,20 @@
             </div>
         </div>
     </div>
+    <script type="text/babel">
+
+
+        const App = (props) => {
+            const [data, setData] = useState([]);
+            return (
+                <div>
+                    <h1>{text}</h1>
+                    <input type="text" onClick={(e) => setText(e.target.value)}> </input>
+                </div>
+            );
+        }
+    </script>
+
 </body>
 
 </html>

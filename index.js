@@ -1,3 +1,4 @@
+
 async function DataServer(url = 'http://localhost:1880/user') {
     var res = await fetch(url);
     var data = await res.json();
